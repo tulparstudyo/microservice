@@ -7,7 +7,7 @@ import { AppService } from './app.service';
   imports: [
     ClientsModule.register([
       { name: 'TCP_SERVICE', transport: Transport.TCP, options: { port: 3101 } },
-      { name: 'DOCKER_SERVICE', transport: Transport.TCP, options: { port: 3102 } },
+      { name: 'DOCKER_SERVICE', transport: Transport.TCP, options: { host:"localhost", port: 3102 } },
     ]),
   ],
   controllers: [AppController],
