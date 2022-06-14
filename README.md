@@ -94,7 +94,7 @@ Bir microservise bağlantı kurulması için. Microservisin portu belirtilerek i
 @Module({
   imports: [
     ClientsModule.register([
-      { name: 'TRENDYOL', transport: Transport.TCP, options: { host: '{your_container_name}', port: 3101 } },
+      { name: '{YOUR_MICROSERVICE}', transport: Transport.TCP, options: { host: '{your_container_name}', port: 3101 } },
     ]),
   ],
   controllers: [TrendyolController],
