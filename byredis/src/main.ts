@@ -7,7 +7,7 @@ async function bootstrap() {
     const app = await NestFactory.createMicroservice(AppModule, {
         transport: Transport.REDIS,
         options: {
-            url: 'redis://localhost:3102',
+            url: 'redis://127.0.0.1:3102',
         },
     });
     await app.listen();
