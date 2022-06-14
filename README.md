@@ -1,4 +1,4 @@
-# Microservice with nestjs On AWS server and Docker
+# Microservice On AWS server with Nestjs and Docker
 ### Yararlı linkler: 
 https://github.com/Nditah/nestjs-microservice<br/>
 https://github.com/jmadankumar/nestjs-basic-auth<br/>
