@@ -11,6 +11,7 @@ export class AppService {
   ) {}
 
   testTcp() {
+    console.log(this.tcpClient);
     return this.tcpClient.send('test_tcp', {});
   }
   testRedis() {
