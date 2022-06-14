@@ -16,6 +16,7 @@ export class AppService {
   }
   testRedis() {
     console.log('Redis çağrılıyor');
+    console.log(this.redisClient);
     return this.redisClient.send('test_redis', {});
   }
 }
