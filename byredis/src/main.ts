@@ -9,7 +9,7 @@ async function bootstrap() {
             url: 'redis://localhost:6379',
         },
     });
-    await app.listen();
     console.log('MoviesService is running on 6379');
+    await app.listen();
 }
 bootstrap();
