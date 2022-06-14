@@ -1,14 +1,21 @@
 import { Inject, Injectable } from '@nestjs/common';
-import { ClientProxy } from '@nestjs/microservices';
+import { ClientProxy, ClientProxyFactory, Transport } from '@nestjs/microservices';
 
 @Injectable()
 export class AppService {
   private readonly users: any[] = [];
-
+  private readonly redisClient: ClientProxy;
   constructor(
     @Inject('TCP_SERVICE') private readonly tcpClient: ClientProxy,
-    @Inject('REDIS_SERVICE') private readonly redisClient: ClientProxy,
-  ) {}
+  ) {
+
+    this.redisClient = ClientProxyFactory.create({
+      transport: Transport.REDIS,
+      options: {
+        url: 'redis://localhost:6379',
+      },
+    });
+  }
 
   testTcp() {
     console.log(this.tcpClient);
