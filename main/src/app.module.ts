@@ -7,7 +7,7 @@ import { AppService } from './app.service';
   imports: [
     ClientsModule.register([
       { name: 'TCP_SERVICE', transport: Transport.TCP, options: { port: 3101 } },
-      { name: 'REDIS_SERVICE', transport: Transport.REDIS, options: { url: 'redis://127.0.0.1:3102' } },
+      { name: 'REDIS_SERVICE', transport: Transport.REDIS, options: { url: 'redis://127.0.0.1:6379' } },
     ]),
   ],
   controllers: [AppController],
