@@ -51,6 +51,7 @@ $ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 $ sudo apt-get install nodejs
 $ node -v
 ```
+microservis kullanırken ana servisten diğerler servislere TCP iletişim isteği atarken microservisin bulunduğu containerin Ip si yerine kontainerin adını kullanmak işlerinizi kolaylaştıracaktır. Bunun için Docker'ın yerleşik DNS hizmetini kullanabilmek için özel bir ağ tanımlamalısınız. Bunu için Portiner panelden bu tanımlamayı yapıp micreservis containerlarını bu bu ağda toplamanız yeterli olacaktır
 ### 6. Connect Container via SSH
 ```
    open Containers > api-gateway page
