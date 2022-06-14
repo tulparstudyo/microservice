@@ -1,9 +1,4 @@
 # Microservice On AWS server with Nestjs and Docker
-### Yararlı linkler: 
-https://github.com/Nditah/nestjs-microservice<br/>
-https://github.com/jmadankumar/nestjs-basic-auth<br/>
-https://nestjs.com/<br>
-https://stackoverflow.com/questions/52266348/how-to-split-nest-js-microservices-into-separate-projects<br>
 ### 1. AWS
 ```
  Create instance Canonical, Ubuntu, 20.04 LTS, amd64. Allow HTTP and HTTPS traffic from the internet.
@@ -119,7 +114,11 @@ async function bootstrap() {
   constructor(
       @Inject('{YOUR_MICROSERVICE}') private readonly trendyolClient: ClientProxy,
   ) {}
-
+### Yararlı linkler: 
+https://github.com/Nditah/nestjs-microservice<br/>
+https://github.com/jmadankumar/nestjs-basic-auth<br/>
+https://nestjs.com/<br>
+https://stackoverflow.com/questions/52266348/how-to-split-nest-js-microservices-into-separate-projects<br>
 ```
 Getaway'da Metod içinde oluşturulan inkjet kullanılarak çağrı yapılır. Çağrı yapılırken microserviste eşleştirilecek bir pattern ve gönderilecek datalar belirlenir
 ```
