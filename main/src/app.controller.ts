@@ -14,8 +14,8 @@ export class AppController {
   testTcp() {
     return this.appService.testTcp();
   }
-  @Get('redis')
+  @Get('docker')
   testRedis() {
-    return this.appService.testRedis();
+    return this.appService.testDocker();
   }
 }

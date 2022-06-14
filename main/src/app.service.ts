@@ -7,23 +7,16 @@ export class AppService {
   private readonly redisClient: ClientProxy;
   constructor(
     @Inject('TCP_SERVICE') private readonly tcpClient: ClientProxy,
-  ) {
-
-    this.redisClient = ClientProxyFactory.create({
-      transport: Transport.REDIS,
-      options: {
-        url: 'redis://localhost:6379',
-      },
-    });
-  }
+    @Inject('DOCKER_SERVICE') private readonly dockerClient: ClientProxy,
+  ) {}
 
   testTcp() {
     console.log(this.tcpClient);
     return this.tcpClient.send('test_tcp', {});
   }
-  testRedis() {
-    console.log('Redis çağrılıyor');
+  testDocker() {
+    console.log('Docker çağrılıyor');
     console.log(this.redisClient);
-    return this.redisClient.send('test_redis', {});
+    return this.dockerClient.send('test_docker', {});
   }
 }
