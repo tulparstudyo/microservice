@@ -117,7 +117,7 @@ async function bootstrap() {
 öncelikle microservisin çağrılacağı service ve controller içinde bir Incjet oluşturulur.
 ```
   constructor(
-      @Inject('TRENDYOL') private readonly trendyolClient: ClientProxy,
+      @Inject('{YOUR_MICROSERVICE}') private readonly trendyolClient: ClientProxy,
   ) {}
 
 ```
