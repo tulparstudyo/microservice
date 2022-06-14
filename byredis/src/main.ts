@@ -10,6 +10,6 @@ async function bootstrap() {
         },
     });
     await app.listen();
-    console.log('MoviesService is running on 6379.');
+    console.log('MoviesService is running on 6379');
 }
 bootstrap();
