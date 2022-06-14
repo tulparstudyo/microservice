@@ -652,10 +652,10 @@
     "tslib" "2.4.0"
     "uuid" "8.3.2"
 
-"@nestjs/microservices@^8.0.0", "@nestjs/microservices@^8.4.6":
-  "integrity" "sha512-HEGznxFKnNwjIk+GT/xKzZ4jo4Itus0PhSMm689SDCBOzvdAOuqCkCWZXsP+jTRzeqaI+/7GEFq+P8q1eZsc/A=="
-  "resolved" "https://registry.npmjs.org/@nestjs/microservices/-/microservices-8.4.6.tgz"
-  "version" "8.4.6"
+"@nestjs/microservices@^8.0.0", "@nestjs/microservices@^8.4.7":
+  "integrity" "sha512-JZX29tBWbbPa+Q06QcCbwKTyEsOFHAPrxgfEkRNwoaiEqqCsITT9w2n5bcz3vlUurdpy5dIgX3/almbitghbKg=="
+  "resolved" "https://registry.npmjs.org/@nestjs/microservices/-/microservices-8.4.7.tgz"
+  "version" "8.4.7"
   dependencies:
     "iterare" "1.2.1"
     "tslib" "2.4.0"
