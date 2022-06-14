@@ -74,7 +74,7 @@ microservis kullanırken ana servisten diğerler servislere TCP iletişim isteğ
    microservisi çalıştırmak için
    npm run start:dev
 ```
-Bu aşamada containerinizi Portainer Images içine clonlayarak siğer webservisler için bu işlemleri tekrarlamaktan kurtulabilirsiniz. Ben nestjs:latest adında bir local image oluşturdum. bu image "Image list" sayfasında listeleniyor 
+Bu aşamada containerinizi Portainer Images içine clonlayarak diğer webservisler için bu işlemleri tekrarlamaktan kurtulabilirsiniz. Ben nestjs:latest adında bir local image oluşturdum. bu image "Image list" sayfasında listeleniyor 
 ### 8. Install A Micro Servis on Container
 ```
    # cd home
