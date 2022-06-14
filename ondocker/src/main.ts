@@ -8,8 +8,7 @@ async function bootstrap() {
     transport: Transport.TCP,
     options: { host:'0.0.0.0', port: 3102 },
   });
-  await app.startAllMicroservices();
-  //await app.listen();
   console.log('TCP is running on localhost 3102.');
+  await app.startAllMicroservices();
 }
 bootstrap();

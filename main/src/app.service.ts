@@ -11,12 +11,11 @@ export class AppService {
   ) {}
 
   testTcp() {
-    console.log(this.tcpClient);
+    console.log('Calling Microservice');
     return this.tcpClient.send('test_tcp', {});
   }
   testDocker() {
-    console.log('Docker çağrılıyor');
-    console.log(this.redisClient);
+    console.log('Calling Microservice from Docker');
     return this.dockerClient.send('test_docker', {});
   }
 }
